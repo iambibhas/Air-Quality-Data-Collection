@@ -1,5 +1,5 @@
 #collect data from http://aqicn.org/json-api/doc/
-#you can name the city to get the real time data, there are five different way to request data based on the API
+#you can get the real time data through API provide by http://aqicn.org/, there are five different way to request data based on the API
 import urllib2
 import json
 
@@ -28,10 +28,10 @@ url = "https://api.waqi.info/map/bounds/?latlng="+lating+"&token="+token+""
 '''
 
 #request data for the station search by keyword
-""
+'''
 keyword = "shanghai"
 url = "https://api.waqi.info/search/?token="+token+"&keyword="+keyword+""
-""
+'''
 
 f = urllib2.urlopen(url)
 parsed = json.loads(f.read())
